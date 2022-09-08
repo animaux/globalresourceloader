@@ -182,6 +182,11 @@
 			}
 
 			if (@isset($_POST['action']['save'])) {
+			  $settings['event-names'] = $settings['event-names'] ?? null;
+			  $settings['event-pages'] = $settings['event-pages'] ?? null;
+			  $settings['ds-names'] = $settings['ds-names'] ?? null;
+			  $settings['ds-pages'] = $settings['ds-pages'] ?? null;
+			  
 				$this->driver->setEventNames($settings['event-names']);
 				$this->driver->setEventPages($settings['event-pages']);
 				$this->driver->setDSNames($settings['ds-names']);
