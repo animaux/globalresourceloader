@@ -175,7 +175,8 @@
 		}
 
 		public function __actionIndex() {
-			$settings  = @$_POST['settings'];
+		  $_POST['settings'] = $_POST['settings'] ?? null;
+			$settings = @$_POST['settings'];
 
 			if (empty($this->driver)) {
 				$this->driver = ExtensionManager::create('globalresourceloader');

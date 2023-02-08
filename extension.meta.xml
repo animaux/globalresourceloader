@@ -18,6 +18,9 @@
 		</author>
 	</authors>
 	<releases>
+		<release version="1.2.3" date="2023-02-08" min="2.7.10" max="2.x.x">
+			- more PHP 8.1 compatibility, may require PHP 7
+		</release>
 		<release version="1.2.2" date="2022-09-08" min="2.7.10" max="2.x.x">
 			- PHP 8.1 compatibility, may require PHP 7
 		</release>
